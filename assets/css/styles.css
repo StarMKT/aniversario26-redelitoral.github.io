@@ -348,7 +348,7 @@ ul li:nth-child(4) a:before {
 
 
 .header-banner {
-    width: 100%;
+    width: 10vw;
     height: auto;
     object-fit: cover;
     max-width: 100%;
@@ -383,42 +383,42 @@ ul li:nth-child(4) a:before {
 
 
 .hero-image {
-  width: 100%;
-  max-height: 100vh;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
-  display: block;
-  position: relative;
-  top: 0;
-  z-index: 0;
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    z-index: 0;
 }
 
 /* Remove possíveis margens extras de containers antigos */
 .hero-container,
 .hero-wrapper {
-  margin: 0;
-  padding: 0;
-  position: relative;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 /* Ajustes responsivos */
 @media (max-width: 767px) {
-  .hero-image {
-    max-height: 80vh;
-  }
+    .hero-image {
+        max-height: 80vh;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .hero-image {
-    max-height: 90vh;
-  }
+    .hero-image {
+        max-height: 90vh;
+    }
 }
 
 @media (min-width: 1024px) {
-  .hero-image {
-    max-height: 100vh;
-  }
+    .hero-image {
+        max-height: 100vh;
+    }
 }
 
 
@@ -450,7 +450,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
 }
@@ -772,7 +772,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
 
@@ -921,7 +921,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
 
@@ -1073,7 +1073,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
     /* HEADER 2 */
@@ -1224,7 +1224,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -1375,7 +1375,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
 
@@ -1527,7 +1527,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -1975,7 +1975,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
 
@@ -2125,7 +2125,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
 
@@ -2424,7 +2424,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
 
@@ -2574,7 +2574,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -2723,7 +2723,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -2872,7 +2872,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
     /* HEADER 2 */
@@ -3021,7 +3021,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
     /* HEADER 2 */
@@ -3170,7 +3170,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -3319,7 +3319,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
     /* HEADER 2 */
@@ -3468,7 +3468,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
     /* HEADER 2 */
@@ -3617,7 +3617,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-    
+
 
 
 
@@ -3915,7 +3915,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
 
@@ -4065,7 +4065,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
 
@@ -4215,7 +4215,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
     /* HEADER 2 */
@@ -4366,7 +4366,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
 
@@ -4518,7 +4518,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
     /* HEADER 2 */
@@ -4668,7 +4668,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
 
@@ -4815,7 +4815,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
     /* HEADER 2 */
@@ -4961,7 +4961,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -5253,7 +5253,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -5690,7 +5690,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
     /* HEADER 2 */
@@ -5836,7 +5836,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
     /* HEADER 2 */
@@ -5982,7 +5982,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
     /* HEADER 2 */
@@ -6128,7 +6128,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
     /* HEADER 2 */
@@ -6421,7 +6421,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
 
@@ -6715,7 +6715,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -6862,7 +6862,7 @@ ul li:nth-child(4) a:before {
     }
 
 
- 
+
 
 
 
@@ -7156,7 +7156,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-    
+
 
 
 
@@ -7304,7 +7304,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
     /* HEADER 2 */
 
@@ -7450,7 +7450,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
 
@@ -7745,7 +7745,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
     /* HEADER 2 */
@@ -7893,7 +7893,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-   
+
 
 
 
@@ -8485,7 +8485,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -8633,7 +8633,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -8929,7 +8929,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -9077,7 +9077,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
 
     /* HEADER 2 */
@@ -9225,7 +9225,7 @@ ul li:nth-child(4) a:before {
     }
 
 
-  
+
 
     /* HEADER 2 */
 
@@ -12700,65 +12700,188 @@ ul li:nth-child(4) a:before {
     }
 }
 
+
 /* ===========================================
    HEADER SECTION – Ajuste de overlay fundo_header.png + hero.png
    =========================================== */
 
 .header-banner {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  z-index: 0;
-  min-height: 550px;
+    width: 100vw;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 0;
+    min-height: 550px;
 }
 
 .bolo-overlay {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 90vw;
-  width: clamp(300px, 60vw, 700px);
-  z-index: 2;
-  margin-top: clamp(2rem, 8vw, 5rem);
-  animation: floatY 4s ease-in-out infinite alternate;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90vw;
+    width: clamp(300px, 60vw, 700px);
+    z-index: 2;
+    margin-top: clamp(2rem, 8vw, 5rem);
+    animation: floatY 4s ease-in-out infinite alternate;
 }
 
 @keyframes floatY {
-  0%   { transform: translate(-50%, 0); }
-  100% { transform: translate(-50%, -12px); }
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -12px);
+    }
 }
 
 @media (max-width: 768px) {
-  .header-banner {
-    min-height: 480px;
-  }
+    .header-banner {
+        min-height: 480px;
+    }
 
-  .bolo-overlay {
-    margin-top: clamp(1.5rem, 6vw, 4rem);
-    width: clamp(280px, 80vw, 500px);
-    animation: floatY 3.5s ease-in-out infinite alternate;
-  }
+    .bolo-overlay {
+        margin-top: clamp(1.5rem, 6vw, 4rem);
+        width: clamp(280px, 80vw, 500px);
+        animation: floatY 3.5s ease-in-out infinite alternate;
+    }
 }
 
 @media (min-width: 1200px) {
-  .header-banner {
-    min-height: 650px;
-  }
+    .header-banner {
+        min-height: 650px;
+    }
 
-  .bolo-overlay {
-    margin-top: 3rem;
-    width: 600px;
-  }
+    .bolo-overlay {
+        margin-top: 3rem;
+        width: 600px;
+    }
 }
 
 /* Assegura que overlay-image sempre esteja acima do banner */
 .overlay-image {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+/* ===== HEADER TICKETS: CHUVA COM VARIAÇÕES ===== */
+
+.ticket {
   position: absolute;
-  z-index: 10;
+  width: var(--size);
+  top: calc(-1 * var(--size));
+  animation: fall var(--duration) linear infinite;
   pointer-events: none;
 }
+
+
+/* Profundidade (z-index) controlada manualmente */
+.ticket.behind { z-index: 2; }
+.ticket.front  { z-index: 10; }
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1; /* Visível até 80% da descida */
+  }
+  100% {
+    transform: translateY(800px) rotate(var(--rotation));
+    opacity: 0; /* Desaparece suavemente no fim */
+  }
+}
+
+/* Tickets: LEFT, SIZE, ROTATE, SPEED */
+.ticket1  { left: 5%;   --size: 40px; --rotation: 180deg;  --duration: 6s; }
+.ticket2  { left: 20%;  --size: 60px; --rotation: 360deg;  --duration: 8s; }
+.ticket3  { left: 40%;  --size: 35px; --rotation: -270deg; --duration: 7s; }
+.ticket4  { left: 60%;  --size: 50px; --rotation: 90deg;   --duration: 9s; }
+.ticket5  { left: 75%;  --size: 45px; --rotation: -180deg; --duration: 6.5s; }
+.ticket6  { left: 90%;  --size: 55px; --rotation: 360deg;  --duration: 7.5s; }
+
+.ticket7  { left: 15%;  --size: 38px; --rotation: 144deg;  --duration: 6.8s; }
+.ticket8  { left: 33%;  --size: 52px; --rotation: -225deg; --duration: 7.2s; }
+.ticket9  { left: 50%;  --size: 47px; --rotation: 160deg;  --duration: 8.1s; }
+.ticket10 { left: 67%;  --size: 42px; --rotation: -190deg; --duration: 9.3s; }
+.ticket11 { left: 82%;  --size: 50px; --rotation: 130deg;  --duration: 6.7s; }
+.ticket12 { left: 95%;  --size: 58px; --rotation: -145deg; --duration: 7.8s; }
+
+/* === TICKETS GRANDES (efeito de proximidade nas bordas) === */
+.ticket13 {
+  left: -5%;
+  --size: 110px;
+  --rotation: 240deg;
+  --duration: 10s;
+  z-index: 12;
+}
+
+.ticket14 {
+  left: 98%;
+  --size: 90px;
+  --rotation: -180deg;
+  --duration: 11s;
+  z-index: 11;
+}
+
+.ticket15 {
+  left: -3%;
+  --size: 120px;
+  --rotation: 360deg;
+  --duration: 9.5s;
+  z-index: 10;
+}
+
+.ticket16 {
+  left: 95%;
+  --size: 100px;
+  --rotation: -300deg;
+  --duration: 10.5s;
+  z-index: 12;
+}
+
+
+/* === TICKETS ULTRA PRÓXIMOS (somente nas laterais) === */
+.ticket-big1 {
+  left: 3%;
+  --size: 200px;
+  --rotation: 90deg;
+  --duration: 12s;
+  animation-delay: 0s;
+  z-index: 20;
+}
+
+.ticket-big2 {
+  left: 85%;
+  --size: 180px;
+  --rotation: -220deg;
+  --duration: 14s;
+  animation-delay: 6s;
+  z-index: 20;
+}
+
+.ticket-big3 {
+  left: 7%;
+  --size: 220px;
+  --rotation: 360deg;
+  --duration: 16s;
+  animation-delay: 10s;
+  z-index: 21;
+}
+
+.ticket-big4 {
+  left: 90%;
+  --size: 190px;
+  --rotation: -160deg;
+  --duration: 13s;
+  animation-delay: 4s;
+  z-index: 21;
+}
+
 
 
 /* ==========================================================
