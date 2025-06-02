@@ -1,18 +1,16 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    let activeItem = null;
-    document.querySelectorAll('.faq-item').forEach(item => {
-        const answer = item.querySelector('.faq-answer');
-        answer.style.display = 'none';  // Explicitly set initial state
-        item.addEventListener('click', () => {
-            if (activeItem) {
-                activeItem.style.display = 'none';
-            }
-            if (activeItem !== answer) {
-                answer.style.display = 'block';
-                activeItem = answer;
-            } else {
-                activeItem = null;
-            }
-        });
-    });
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+
+    const isOpen = item.classList.contains('open');
+
+    // Fecha todos antes
+    document.querySelectorAll('.faq-item.open')
+      .forEach(el => el.classList.remove('open'));
+
+    // Só reabre se não era ele mesmo o que estava aberto
+    if (!isOpen) {
+      item.classList.add('open');
+    }
+
+  });
 });

@@ -11859,52 +11859,9 @@ ul li:nth-child(4) a:before {
 
 
 
-.image-container2 {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-
-}
-
-
-.faq-overlay-text {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Gotham', sans-serif;
-    font-weight: bold;
-    font-size: 65px;
-    text-align: left;
-}
-
-
-.ver-regulamento-image {
-    position: absolute;
-    top: 15%;
-    right: 30%;
-    width: 200px;
-    height: auto;
-    cursor: pointer;
-    transition: opacity 0.5s ease-in-out;
-}
-
-
 .ver-regulamento-image:hover {
     opacity: 0.10;
 
-}
-
-
-.faq-container {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 
@@ -11942,18 +11899,6 @@ ul li:nth-child(4) a:before {
 }
 
 
-.whatsapp-banner {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 40%;
-    margin-bottom: -20%;
-    cursor: pointer;
-}
-
-
 .whatsapp-banner:hover {
     opacity: 0.60;
     transition: opacity 0.5s ease-in-out;
@@ -11963,61 +11908,21 @@ ul li:nth-child(4) a:before {
 
 @media (max-width: 374px) {
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
     .marcas-fundo-faq {
         height: 3700px;
         object-fit: cover;
     }
 
-    .ver-regulamento-image {
-        top: 7%;
-        right: 25%;
-    }
 }
 
 
 @media (min-width: 375px) and (max-width: 400px) {
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
     .marcas-fundo-faq {
         height: 3700px;
         object-fit: cover;
     }
 
-    .ver-regulamento-image {
-        top: 7%;
-        right: 25%;
-    }
 }
 
 
@@ -12028,27 +11933,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 25%;
-    }
 }
 
 
@@ -12058,27 +11942,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 25%;
-    }
 }
 
 
@@ -12088,27 +11951,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 25%;
-    }
 }
 
 
@@ -12118,27 +11960,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 25%;
-    }
 }
 
 
@@ -12148,27 +11969,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 28%;
-    }
 }
 
 
@@ -12178,27 +11978,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 30%;
-    }
 }
 
 
@@ -12208,27 +11987,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 33%;
-    }
 }
 
 
@@ -12238,27 +11996,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 35%;
-    }
 }
 
 
@@ -12268,27 +12005,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 28px;
-        top: 4%;
-        left: 50%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 7%;
-        right: 36%;
-    }
 }
 
 
@@ -12298,27 +12014,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 36px;
-        top: 4%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 3%;
-        right: 15%;
-    }
 }
 
 
@@ -12328,27 +12023,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 36px;
-        top: 4%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-    }
-
-
-    .ver-regulamento-image {
-        top: 3%;
-        right: 15%;
-    }
 }
 
 
@@ -12358,28 +12032,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 36px;
-        top: 4%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 70%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 3%;
-        right: 15%;
-    }
 }
 
 
@@ -12389,28 +12041,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 36px;
-        top: 4%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 70%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 3%;
-        right: 15%;
-    }
 }
 
 
@@ -12420,28 +12050,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 36px;
-        top: 4%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 70%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 3%;
-        right: 15%;
-    }
 }
 
 
@@ -12451,28 +12059,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 36px;
-        top: 4%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 10%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 70%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 3%;
-        right: 15%;
-    }
 }
 
 
@@ -12482,29 +12068,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 45px;
-        top: 6%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 13%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 70%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 4.5%;
-        right: 19%;
-        width: 20%;
-    }
 }
 
 
@@ -12514,29 +12077,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 45px;
-        top: 6%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 13%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 70%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 4.5%;
-        right: 19%;
-        width: 20%;
-    }
 }
 
 
@@ -12546,29 +12086,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 55px;
-        top: 8%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 16%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 70%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 6.2%;
-        right: 19%;
-        width: 20%;
-    }
 }
 
 
@@ -12578,29 +12095,6 @@ ul li:nth-child(4) a:before {
         object-fit: cover;
     }
 
-    .faq-overlay-text {
-        font-size: 55px;
-        top: 8%;
-        left: 34%;
-    }
-
-    .faq-container {
-        top: 16%;
-        left: 13%;
-        width: 75%;
-    }
-
-    .whatsapp-banner {
-        height: auto;
-        width: 55%;
-    }
-
-
-    .ver-regulamento-image {
-        top: 6.2%;
-        right: 19%;
-        width: 20%;
-    }
 }
 
 
@@ -13443,5 +12937,138 @@ ul li:nth-child(4) a:before {
 
     .footer-socials a {
         margin: 0 2px;
+    }
+}
+
+/* =========  BLOCO ========= */
+.image-container2 {
+    /* imagem de fundo – corta se precisar */
+    --bg: url("../images/marcas_fundo.png");
+    background: var(--bg) center/cover no-repeat;
+
+    /* layout */
+    width: 100%;
+    display: flex;
+    /* faz o <section> abraçar o conteúdo */
+    justify-content: center;
+    padding-inline: clamp(1rem, 4vw, 2.5rem);
+    /* respiro lateral */
+
+    /* evita sobras embaixo quando a img-fundo passa do limite */
+    overflow: hidden;
+}
+
+
+
+/* =========  CONTEÚDO ========= */
+.faq-inner {
+    max-width: 1100px;
+    /* limite de leitura */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    padding-block: clamp(2rem, 6vw, 4rem);
+    /* top + bottom */
+}
+
+.faq-overlay-text {
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #fff
+}
+
+/* imagens soltas */
+.faq-overlay-text,
+.ver-regulamento-image,
+.whatsapp-banner {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* FAQ em modo coluna única por padrão */
+.faq-container {
+    width: 100%;
+}
+
+/* =========  MELHORIA: duas colunas em telas largas ========= */
+@media (min-width: 768px) {
+    .faq-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .faq-item {
+        max-width: 100%;
+    }
+}
+
+
+/* ==========================================================
+   FAQ — Layout correftion
+   ========================================================== */
+
+/* base --------------------------------------------------- */
+.faq-item {
+    overflow: hidden;
+}
+
+/* evita “jump” de conteúdo */
+.faq-answer {
+    display: none;
+}
+
+/* fechado por padrão    */
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+/* mostra só do item aberto */
+
+/* duas colunas em telas largas -------------------------- */
+@media (min-width:768px) {
+    .faq-container {
+        display: flex;
+        /* flex > wrap evita que o item vizinho cresça */
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .faq-item {
+        flex: 1 1 calc(50% - 1.5rem);
+        /* 50 % menos o gap – mantem 2 colunas */
+    }
+}
+
+/* ==========================================================
+   FAQ – respiro lateral (mobile)
+   ========================================================== */
+@media (max-width: 767.98px) {
+
+    /* margem de 1 rem (≈16 px) em cada lado de TODOS os cartões */
+    .faq-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .whatsapp-banner {
+        display: block;
+        width: calc(100% - 2rem);
+        /* ocupa toda a largura abatendo o respiro */
+        max-width: 400px;
+        /* opcional: evita exagero em tablets estreitos */
+        margin: 1rem auto 0;
+        /* respiro lateral (1 rem) + centralização */
+    }
+
+    /* mantém o espaçamento vertical que já existe */
+    .faq-item+.faq-item {
+        margin-top: 1rem;
     }
 }
