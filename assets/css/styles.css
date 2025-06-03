@@ -457,6 +457,135 @@ ul li:nth-child(4) a:before {
 
 
 
+
+.prizes-section,
+.mechanics-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+
+.car-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.carro-premio {
+  position: absolute;
+  bottom: 10%;
+  right: -700px; /* começa fora da tela à direita */
+  width: clamp(380px, 45vw, 620px); /* maior e mais responsivo */
+  transition: transform 1.5s ease-in-out;
+  transform: translateX(0);
+  z-index: 5;
+}
+
+/* estado: carro ativo (estacionado) */
+.carro-ativo {
+  transform: translateX(-65vw); /* empurra o carro até quase o centro */
+}
+
+/* estado: carro sai de ré (para a direita) */
+.carro-saiu {
+  transform: translateX(120vw); /* volta para fora da direita */
+}
+
+.celular-container {
+  position: absolute;
+  top: 18%;
+  left: 13%;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+}
+
+.carro-premio {
+  position: absolute;
+  bottom: 10%;
+  right: -700px;
+  width: clamp(480px, 48vw, 780px); /* Antes: clamp(380px, 45vw, 620px) */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: translateX(0);
+  z-index: 5;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+
+.carro-ativo {
+  transform: translateX(-65vw);
+}
+
+/* Em telas muito largas, limitamos o avanço para não invadir a esquerda */
+@media (min-width: 1600px) {
+  .carro-ativo {
+    transform: translateX(-55vw); /* reduz o avanço */
+  }
+}
+
+@media (min-width: 1920px) {
+  .carro-ativo {
+    transform: translateX(-50vw); /* limite máximo de avanço */
+  }
+}
+
+.carro-saiu {
+  transform: translateX(120vw);
+}
+
+.carro-ativo:hover {
+  scale: 1.05; /* apenas amplia, não quebra translateX */
+  z-index: 6;
+}
+
+
+.celular-premio {
+  width: clamp(280px, 32vw, 420px); /* Antes: clamp(240px, 30vw, 360px) */
+  opacity: 0;
+  transform: rotate(-20deg) scale(0.9);
+  transition: opacity 1s ease, transform 1s ease;
+  z-index: 4;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+
+.celular-ativo {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.celular-saiu {
+  opacity: 0;
+  transform: rotate(-25deg) scale(0.85);
+}
+
+.celular-premio:hover {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 6;
+}
+
+
+
+
 /* CAMPAIGN INFO SECTION */
 
 
