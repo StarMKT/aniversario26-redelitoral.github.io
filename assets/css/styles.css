@@ -5,6 +5,11 @@
     font-style: normal;
 }
 
+:root {
+  --carro-shift: -65vw;
+}
+
+
 
 html {
     scroll-behavior: smooth;
@@ -365,6 +370,24 @@ ul li:nth-child(4) a:before {
 }
 
 
+.header-banner-container {
+  position: relative;
+}
+
+.header-banner-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* altura do fade */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -455,6 +478,83 @@ ul li:nth-child(4) a:before {
 
 }
 
+/* BOTAO */
+
+
+.botao-wrapper {
+  position: relative;
+  z-index: 10;
+  height: 0; /* não ocupa espaço visual */
+}
+
+.botao-img {
+  position: absolute;
+  top: -80px; /* puxa o botão para cima */
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(180px, 26vw, 200px);
+  height: auto;
+}
+
+
+@media screen and (max-width: 480px) {
+  .botao-img {
+    top: -60px;
+  }
+}
+
+
+
+
+
+
+/* RASPADINHA */
+
+/* PRIZES SECTION (garante referência relativa) */
+/* Certifique-se que o container da seção está posicionado corretamente */
+.prizes-section {
+  position: relative;
+  overflow: visible;
+}
+
+.raspadinha-wrapper {
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(300px, 50vw, 580px);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.raspadinha-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.6;
+  pointer-events: auto;
+}
+
+.raspe-img {
+  width: 70%;
+  left: 10%;
+  top: 30%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.raspadinha-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 2;
+  pointer-events: auto;
+  display: block;
+}
+
 
 
 
@@ -465,12 +565,12 @@ ul li:nth-child(4) a:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .background-image {
   width: 100%;
-  height: auto;
+  height: 1200px;
   display: block;
   object-fit: cover;
 }
@@ -486,6 +586,7 @@ ul li:nth-child(4) a:before {
   width: 100%;
   height: auto;
   pointer-events: none;
+  z-index: 1;
 }
 
 .carro-premio {
@@ -495,7 +596,6 @@ ul li:nth-child(4) a:before {
   width: clamp(380px, 45vw, 620px); /* maior e mais responsivo */
   transition: transform 1.5s ease-in-out;
   transform: translateX(0);
-  z-index: 5;
 }
 
 /* estado: carro ativo (estacionado) */
@@ -510,7 +610,7 @@ ul li:nth-child(4) a:before {
 
 .celular-container {
   position: absolute;
-  top: 18%;
+  top: 30%;
   left: 13%;
   width: auto;
   height: auto;
@@ -552,7 +652,7 @@ ul li:nth-child(4) a:before {
 }
 
 .carro-ativo:hover {
-  scale: 1.05; /* apenas amplia, não quebra translateX */
+  transform: scale(1.05) translateX(var(--carro-shift, -65vw));
   z-index: 6;
 }
 
@@ -582,6 +682,19 @@ ul li:nth-child(4) a:before {
   transform: rotate(0deg) scale(1.05);
   z-index: 6;
 }
+
+
+@media (min-width: 1600px) {
+  :root {
+    --carro-shift: -55vw;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --carro-shift: -50vw;
+  }
+}
+
 
 
 
@@ -13075,3 +13188,168 @@ ul li:nth-child(4) a:before {
         margin-top: 1rem;
     }
 }
+
+
+
+/* ==========================================================
+   TICKETS — responsividade mobile
+   ========================================================== */
+
+
+@media screen and (max-width: 390px) {
+  .ticket {
+    width: 60px !important;
+    height: auto !important;
+    z-index: 10;
+  }
+
+  .ticket-big1,
+  .ticket-big2,
+  .ticket-big3,
+  .ticket-big4 {
+    width: 90px !important;
+    height: auto !important;
+  }
+
+  .ticket1, .ticket2, .ticket3, .ticket4, .ticket5, .ticket6, 
+  .ticket7, .ticket8, .ticket9, .ticket10, .ticket11,
+  .ticket13, .ticket14, .ticket15, .ticket16 {
+    transform: scale(0.8);
+  }
+}
+
+
+
+
+/* ==========================================================
+   PRIZES SECTION — Mobile responsivity
+   ========================================================== */
+
+
+ @media screen and (max-width: 390px) {
+  .carro-premio {
+    width: 280px !important;
+    bottom: 2% !important;
+    right: -200px !important;
+  }
+
+  .celular-premio {
+    width: 180px !important;
+    top: 10% !important;
+    left: 10% !important;
+  }
+
+  .prizes-section .background-image {
+    height: 580px !important;
+    object-fit: cover;
+  }
+
+  .ticket {
+    width: 48px !important;
+    height: auto !important;
+    z-index: 10;
+  }
+
+  .ticket-big1,
+  .ticket-big2,
+  .ticket-big3,
+  .ticket-big4 {
+    width: 80px !important;
+    height: auto !important;
+  }
+
+  .ticket1, .ticket2, .ticket3, .ticket4, .ticket5, .ticket6, 
+  .ticket7, .ticket8, .ticket9, .ticket10, .ticket11,
+  .ticket13, .ticket14, .ticket15, .ticket16 {
+    transform: scale(0.8);
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .prizes-section .background-image {
+    height: 550px !important; /* OU 600px conforme desejado */
+    object-fit: cover;
+  }
+}
+
+
+
+/* ==========================================================
+   PRIZES SECTION — Mobile responsivity
+   ========================================================== */
+
+.raspe-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 6;
+}
+
+.raspe-premio {
+  width: clamp(200px, 22vw, 340px);
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Hover opcional para destaque */
+.raspe-premio:hover {
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 390px) {
+  .raspe-container {
+    top: 24%;
+  }
+
+  .raspe-premio {
+    width: 200px !important;
+  }
+}
+
+
+   
+/* ==========================================================
+   CONFETTI ANIMATION
+   ========================================================== */
+
+
+.confetti-container {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 0; 
+  pointer-events: none;
+  z-index: 20;
+  overflow: visible;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  animation: confetti-fall 2.2s ease-out forwards;
+  opacity: 1;
+  font-family: system-ui, sans-serif;
+  user-select: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes confetti-fall {
+  to {
+    transform: translate(var(--x), var(--y)) rotate(1080deg);
+    opacity: 0;
+  }
+}
+
+
+
+
+
