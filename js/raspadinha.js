@@ -1,13 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Desbloqueia o áudio com um clique em qualquer lugar
-window.addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play().then(() => audio.pause()).catch(() => {});
+    // Desbloqueio universal de áudio com qualquer interação
+    let audioUnlocked = false;
+    function unlockAudioOnce() {
+        if (audioUnlocked) return;
+
+        const audioTest = new Audio('assets/sfx/scraping.mp3');
+        audioTest.play().then(() => {
+            audioTest.pause(); // apenas destrava
+            audioUnlocked = true;
+            document.removeEventListener('click', unlockAudioOnce);
+           document.addEventListener('keydown', unlockAudioOnce);
+            document.removeEventListener('touchstart', unlockAudioOnce);
+        }).catch(() => {});
     }
-}, { once: true });
 
-
+    document.addEventListener('click', unlockAudioOnce);
+   document.addEventListener('keydown', unlockAudioOnce);
+    document.addEventListener('touchstart', unlockAudioOnce);
 
     const container = document.querySelector('.raspadinha-container');
     const canvas = container.querySelector('.raspadinha-canvas');

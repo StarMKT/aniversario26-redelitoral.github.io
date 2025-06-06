@@ -2,6 +2,10 @@ function launchConfetti(targetElement) {
     const confettiContainer = document.createElement('div');
     confettiContainer.classList.add('confetti-container');
 
+    // ▶️ TOCA O SOM DE ESTOURO
+    // const pop = new Audio('assets/sfx/sharp-pop.mp3');
+    // pop.play().catch(() => {});
+
     // Posiciona no topo da imagem, manualmente
     const rect = targetElement.getBoundingClientRect();
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -16,7 +20,7 @@ function launchConfetti(targetElement) {
     document.body.appendChild(confettiContainer);
 
     for (let i = 0; i < 25; i++) {
-        const isEmoji = Math.random() < 0.3; // 30% de chance de ser emoji
+        const isEmoji = Math.random() < 0.3;
         const particle = document.createElement(isEmoji ? 'span' : 'div');
         particle.classList.add('confetti');
 
@@ -25,13 +29,12 @@ function launchConfetti(targetElement) {
         const translateX = (Math.random() - 0.5) * 500;
         const translateY = (Math.random() - 0.5) * 600;
 
-
         particle.style.setProperty('--x', `${translateX}px`);
         particle.style.setProperty('--y', `${translateY}px`);
         particle.style.transform = `rotate(${rotate}deg)`;
 
         if (isEmoji) {
-            const emojis = ['🎉', '🎈', '🎊', '🥳', '🎂', '🎁', '😍', '😛', '🤩' ];
+            const emojis = ['🎉', '🎈', '🎊', '🥳', '🎂', '🎁', '😍', '😛', '🤩'];
             particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
             particle.style.fontSize = `${size}px`;
         } else {
@@ -42,7 +45,6 @@ function launchConfetti(targetElement) {
         }
 
         confettiContainer.appendChild(particle);
-
         setTimeout(() => particle.remove(), 2000);
     }
 
