@@ -480,25 +480,33 @@ ul li:nth-child(4) a:before {
 
 /* BOTAO */
 
-
 .botao-wrapper {
   position: relative;
   z-index: 10;
-  height: 0; /* não ocupa espaço visual */
+  height: 0;
 }
 
-.botao-img {
+.botao-link {
   position: absolute;
-  top: -80px; /* puxa o botão para cima */
   left: 50%;
+  top: -80px; /* posição vertical */
   transform: translateX(-50%);
+}
+
+.botao-link img {
   width: clamp(180px, 26vw, 200px);
   height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
+.botao-link:hover img {
+  transform: scale(1.08);
+}
 
 @media screen and (max-width: 480px) {
-  .botao-img {
+  .botao-link {
     top: -60px;
   }
 }
@@ -511,7 +519,6 @@ ul li:nth-child(4) a:before {
 /* RASPADINHA */
 
 /* PRIZES SECTION (garante referência relativa) */
-/* Certifique-se que o container da seção está posicionado corretamente */
 .prizes-section {
   position: relative;
   overflow: visible;
@@ -556,7 +563,14 @@ ul li:nth-child(4) a:before {
 }
 
 
+.raspadinha-canvas.fade-out {
+  transition: opacity 1s ease;
+  opacity: 0;
+}
 
+
+
+/* PRIZES */
 
 .prizes-section,
 .mechanics-section {
