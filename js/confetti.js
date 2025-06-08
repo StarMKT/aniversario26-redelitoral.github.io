@@ -6,14 +6,23 @@ function launchConfetti(targetElement) {
     // const pop = new Audio('assets/sfx/sharp-pop.mp3');
     // pop.play().catch(() => {});
 
-    // Posiciona no topo da imagem, manualmente
+    // Posicionamento baseado no elemento
     const rect = targetElement.getBoundingClientRect();
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     confettiContainer.style.position = 'absolute';
-    confettiContainer.style.left = `${rect.left + rect.width / 2}px`;
-    confettiContainer.style.top = `${rect.top + scrollTop}px`;
-    confettiContainer.style.transform = 'translate(-50%, -20%)';
+
+    // 🎯 LÓGICA DE POSIÇÃO DIFERENCIADA
+    if (targetElement.classList.contains('carro-premio')) {
+        confettiContainer.style.left = `${rect.left + rect.width * 0.55}px`; // lateral do carro
+        confettiContainer.style.top = `${rect.top + scrollTop + rect.height * 0.10}px`; // perto do laço azul
+    } else {
+        // padrão para celular
+        confettiContainer.style.left = `${rect.left + rect.width * 0.50}px`;
+        confettiContainer.style.top = `${rect.top + scrollTop + rect.height * 0.50}px`;
+    }
+
+    confettiContainer.style.transform = 'translate(-50%, -50%)';
     confettiContainer.style.pointerEvents = 'none';
     confettiContainer.style.zIndex = '999';
 
@@ -51,6 +60,7 @@ function launchConfetti(targetElement) {
     setTimeout(() => confettiContainer.remove(), 2100);
 }
 
+// Ativadores de confetti para elementos específicos
 ['.carro-premio', '.celular-premio'].forEach(selector => {
     const el = document.querySelector(selector);
     if (el) {

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     // Desbloqueio universal de áudio com qualquer interação
     let audioUnlocked = false;
     function unlockAudioOnce() {
@@ -10,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
             audioTest.pause(); // apenas destrava
             audioUnlocked = true;
             document.removeEventListener('click', unlockAudioOnce);
-           document.addEventListener('keydown', unlockAudioOnce);
             document.removeEventListener('touchstart', unlockAudioOnce);
+            document.removeEventListener('keydown', unlockAudioOnce);
         }).catch(() => {});
     }
 
     document.addEventListener('click', unlockAudioOnce);
-   document.addEventListener('keydown', unlockAudioOnce);
+    document.addEventListener('keydown', unlockAudioOnce);
     document.addEventListener('touchstart', unlockAudioOnce);
 
     const container = document.querySelector('.raspadinha-container');
@@ -64,6 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!audio.paused) audio.pause();
     }
 
+    function checkRaspagemCompletada() {
+        const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        let transparent = 0;
+
+        for (let i = 3; i < pixels.data.length; i += 4) {
+            if (pixels.data[i] === 0) transparent++;
+        }
+
+        const percent = transparent / (pixels.data.length / 4);
+        if (percent > 0.6) {
+            const label = document.querySelector('.raspe-label');
+            if (label) label.classList.add('hidden');
+        }
+    }
+
     canvas.addEventListener('mousedown', startDrawing);
     canvas.addEventListener('mouseup', stopDrawing);
     canvas.addEventListener('mouseleave', stopDrawing);
@@ -77,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ctx.beginPath();
         ctx.arc(x, y, 70, 0, Math.PI * 2, false);
         ctx.fill();
+        checkRaspagemCompletada();
     });
 
     // Auto raspagem animada
@@ -93,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const animate = () => {
             if (frame > total) {
                 audio.pause();
+                checkRaspagemCompletada();
                 return;
             }
             const x = (canvas.width / total) * frame;
