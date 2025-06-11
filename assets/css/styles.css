@@ -10304,6 +10304,9 @@ ul li:nth-child(4) a:before {
 
 
 
+/* BRANDS SECTION */
+
+
 @media screen and (max-width: 374px) {
 
     .white-container {
@@ -10356,7 +10359,6 @@ ul li:nth-child(4) a:before {
         margin-top: 35px;
     }
 }
-
 
 @media screen and (min-width: 374px) and (max-width: 450px) {
 
@@ -10411,7 +10413,6 @@ ul li:nth-child(4) a:before {
     }
 }
 
-
 @media screen and (min-width: 451px) and (max-width: 470px) {
 
 .white-container {
@@ -10464,7 +10465,6 @@ ul li:nth-child(4) a:before {
         margin-top: 35px;
     }
 }
-
 
 @media screen and (min-width: 471px) and (max-width: 510px) {
 
@@ -10519,7 +10519,6 @@ ul li:nth-child(4) a:before {
 
 }
 
-
 @media screen and (min-width: 511px) and (max-width: 580px) {
 
 .white-container {
@@ -10572,7 +10571,6 @@ ul li:nth-child(4) a:before {
         margin-top: 35px;
     }
 }
-
 
 @media screen and (min-width: 581px) and (max-width: 650px) {
 
@@ -10632,7 +10630,6 @@ ul li:nth-child(4) a:before {
     }
 
 }
-
 
 @media screen and (min-width: 651px) and (max-width: 710px) {
 
@@ -10694,7 +10691,6 @@ ul li:nth-child(4) a:before {
 
 }
 
-
 @media screen and (min-width: 711px) and (max-width: 738px) {
 
 .white-container {
@@ -10753,7 +10749,6 @@ ul li:nth-child(4) a:before {
     }
 
 }
-
 
 @media screen and (min-width: 739px) and (max-width: 790px) {
 
@@ -10814,7 +10809,6 @@ ul li:nth-child(4) a:before {
     }
 
 }
-
 
 @media screen and (min-width: 791px) and (max-width: 850px) {
 
@@ -10877,7 +10871,6 @@ ul li:nth-child(4) a:before {
     }
 
 }
-
 
 @media screen and (min-width: 851px) and (max-width: 940px) {
 
@@ -10943,7 +10936,6 @@ ul li:nth-child(4) a:before {
 
 }
 
-
 @media screen and (min-width: 941px) and (max-width: 1050px) {
 
     
@@ -10958,7 +10950,7 @@ ul li:nth-child(4) a:before {
         left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 19px;
+        font-size: 22px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
         margin-top: 5%;
@@ -11000,12 +10992,12 @@ ul li:nth-child(4) a:before {
         grid-column: 2 / span 1;
     }
 
+
     .produtos-participantes-image {
         width: 35% !important;
         margin-top: 70px;
     }
 }
-
 
 @media screen and (min-width: 1051px) and (max-width: 1180px) {
 
@@ -11020,7 +11012,7 @@ ul li:nth-child(4) a:before {
         left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 22px;
+        font-size: 24px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
         margin-top: 5%;
@@ -11043,1209 +11035,1632 @@ ul li:nth-child(4) a:before {
         height: auto;
     }
 
-    .final-grid-item.vr {
+    .final-grid-item.trevo {
         grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
     .final-grid-item.wickbold {
-        grid-column: 2 / span 1;
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
 
 
     .final-grid-item.yoki {
-        grid-column: 3 / span 1;
+        grid-column: 2 / span 1;
+        grid-row: auto;
     }
 
 
     .final-grid-item.ype {
-        grid-column: 4 / span 1;
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
+
+       /* .marca-tial {
+    margin-top: 13px !important;
+}
+
+.marca-tirolez {
+    margin-top: 10px !important;
+} */
 
     .produtos-participantes-image {
         width: 35% !important;
-        margin-top: 70px;
+        margin-top: 20% !important;
     }
 }
-
 
 @media screen and (min-width: 1180px) and (max-width: 1199px) {
 
-    .como-participar-desktop {
-        margin-top: -7% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -5.5% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1300px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 30px;
+        font-size: 24px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -37%;
+        margin-top: 5%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1300px;
+        height: 1500px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 10%;
+        margin-top: 12%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 13%;
+        justify-items: center;
+        
     }
 
     .grey-container {
-        height: 85px;
-        width: 85px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
 
-    .produtos-participantes-image {
-        margin-top: 5%;
-        left: 50%;
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+       /* .marca-tial {
+    margin-top: 13px !important;
 }
 
+.marca-tirolez {
+    margin-top: 10px !important;
+} */
+
+    .produtos-participantes-image {
+        width: 30% !important;
+        margin-top: 15% !important;
+    }
+}
 
 @media screen and (min-width: 1199px) and (max-width: 1350px) {
 
-    .como-participar-desktop {
-        margin-top: -1% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -1% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1300px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 30px;
+        font-size: 24px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -37%;
+        margin-top: 5%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1300px;
+        height: 1500px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 10%;
+        margin-top: 12%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 13%;
+        justify-items: center;
+        
     }
 
     .grey-container {
-        height: 85px;
-        width: 85px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
 
-    .produtos-participantes-image {
-        margin-top: 5%;
-        left: 50%;
-        width: 286px;
-        height: 59px;
 
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+       /* .marca-tial {
+    margin-top: 13px !important;
 }
 
+.marca-tirolez {
+    margin-top: 10px !important;
+} */
+
+    .produtos-participantes-image {
+        width: 30% !important;
+        margin-top: 15% !important;
+    }
+}
 
 @media screen and (min-width: 1351px) and (max-width: 1400px) {
 
-    .como-participar-desktop {
-        margin-top: -3% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -1% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1300px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 30px;
+        font-size: 24px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -42%;
+        margin-top: 5%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1400px;
+        height: 1500px;
         object-fit: cover;
     }
 
     .container-grid {
         margin-top: 10%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 13%;
+        justify-items: center;
+        
     }
 
     .grey-container {
-        height: 85px;
-        width: 85px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
 
-    .produtos-participantes-image {
-        margin-top: 12%;
-        left: 50%;
-        width: 297px;
-        height: 60px;
 
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+       /* .marca-tial {
+    margin-top: 13px !important;
 }
 
+.marca-tirolez {
+    margin-top: 10px !important;
+} */
+
+    .produtos-participantes-image {
+        width: 30% !important;
+        margin-top: 12% !important;
+    }
+}
 
 @media screen and (min-width: 1401px) and (max-width: 1469px) {
 
-    .como-participar-desktop {
-        margin-top: -3% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -1% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1300px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
+        text-align: center;
+        color: #6a6a6a;
+        font-size: 26px;
+        font-family: 'Gotham Black', sans-serif;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    .marcas-fundo {
+        height: 1500px;
+        object-fit: cover;
+    }
+
+    .container-grid {
+        margin-top: 10%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        
+    }
+
+    .grey-container {
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+       /* .marca-tial {
+    margin-top: 13px !important;
+}
+
+.marca-tirolez {
+    margin-top: 10px !important;
+} */
+
+    .produtos-participantes-image {
+        width: 30% !important;
+        margin-top: 10% !important;
+    }
+}
+
+@media screen and (min-width: 1469px) and (max-width: 1479px) {
+
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1300px;
+        z-index: 0;
+    }
+
+    .header-text {
+        left: 15%;
+        text-align: center;
+        color: #6a6a6a;
+        font-size: 26px;
+        font-family: 'Gotham Black', sans-serif;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    .marcas-fundo {
+        height: 1500px;
+        object-fit: cover;
+    }
+
+    .container-grid {
+        margin-top: 10%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        
+    }
+
+    .grey-container {
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+       /* .marca-tial {
+    margin-top: 13px !important;
+}
+
+.marca-tirolez {
+    margin-top: 10px !important;
+} */
+
+    .produtos-participantes-image {
+        width: 30% !important;
+        margin-top: 10% !important;
+    }
+}
+
+@media screen and (min-width: 1479px) and (max-width: 1509px) {
+
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
+    }
+
+    .header-text {
+        left: 15%;
+        text-align: center;
+        color: #6a6a6a;
+        font-size: 26px;
+        font-family: 'Gotham Black', sans-serif;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    .marcas-fundo {
+        height: 1750px;
+        object-fit: cover;
+    }
+
+    .container-grid {
+        margin-top: 10%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        row-gap: 30px !important;
+        
+    }
+
+    .grey-container {
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .produtos-participantes-image {
+        width: 30% !important;
+        margin-top: 10% !important;
+    }
+
+}
+
+@media screen and (min-width: 1509px) and (max-width: 1580px) {
+
+   
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
+    }
+
+    .header-text {
+        left: 15%;
+        text-align: center;
+        color: #6a6a6a;
+        font-size: 26px;
+        font-family: 'Gotham Black', sans-serif;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    .marcas-fundo {
+        height: 1750px;
+        object-fit: cover;
+    }
+
+    .container-grid {
+        margin-top: 10%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        row-gap: 30px !important;
+        
+    }
+
+    .grey-container {
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .produtos-participantes-image {
+        width: 27% !important;
+        margin-top: 10% !important;
+    }
+}
+
+@media screen and (min-width: 1581px) and (max-width: 1699px) {
+
+  
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
+    }
+
+    .header-text {
+        left: 15%;
+        text-align: center;
+        color: #6a6a6a;
+        font-size: 26px;
+        font-family: 'Gotham Black', sans-serif;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    .marcas-fundo {
+        height: 1750px;
+        object-fit: cover;
+    }
+
+    .container-grid {
+        margin-top: 10%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        row-gap: 30px !important;
+        
+    }
+
+    .grey-container {
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
+
+    .produtos-participantes-image {
+        width: 27% !important;
+        margin-top: 10% !important;
+    }
+}
+
+@media screen and (min-width: 1699px) and (max-width: 1801px) {
+
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
+    }
+
+    .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
         font-size: 30px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -42%;
+        margin-top: 5%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1400px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
         margin-top: 10%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 13%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 85px;
-        width: 85px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 12%;
-        left: 50%;
-        width: 297px;
-        height: 60px;
-
+        width: 27% !important;
+        margin-top: 10% !important;
     }
 }
-
-
-@media screen and (min-width: 1469px) and (max-width: 1479px) {
-
-    .como-participar-desktop {
-        margin-top: -3% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -1% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
-    }
-
-    .header-text {
-        text-align: center;
-        color: #6a6a6a;
-        font-size: 35px;
-        font-family: 'Gotham Black', sans-serif;
-        font-weight: bold;
-        margin-top: -39%;
-    }
-
-    /* ESSE É O FUNDO GERAL */
-    .marcas-fundo {
-        height: 1400px;
-        object-fit: cover;
-    }
-
-    .container-grid {
-        margin-top: 10%;
-        grid-template-columns: repeat(4, 1fr);
-        margin-left: 13%;
-    }
-
-    .grey-container {
-        height: 85px;
-        width: 85px;
-    }
-
-
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
-    }
-
-    .produtos-participantes-image {
-        margin-top: 12%;
-        left: 50%;
-        width: auto;
-        height: 66px;
-
-    }
-}
-
-
-@media screen and (min-width: 1479px) and (max-width: 1509px) {
-
-    .como-participar-desktop {
-        margin-top: -7% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -1% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
-    }
-
-    .header-text {
-        text-align: center;
-        color: #6a6a6a;
-        font-size: 35px;
-        font-family: 'Gotham Black', sans-serif;
-        font-weight: bold;
-        margin-top: -70%;
-    }
-
-    /* ESSE É O FUNDO GERAL */
-    .marcas-fundo {
-        height: 1800px;
-        object-fit: cover;
-    }
-
-    .container-grid {
-        margin-top: 10%;
-        grid-template-columns: repeat(4, 1fr);
-        margin-left: 13%;
-    }
-
-    .grey-container {
-        height: 125px;
-        width: 125px;
-    }
-
-
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
-    }
-
-    .produtos-participantes-image {
-        margin-top: 12%;
-        left: 50%;
-        width: auto;
-        height: 66px;
-
-    }
-
-}
-
-
-@media screen and (min-width: 1509px) and (max-width: 1580px) {
-
-    .como-participar-desktop {
-        margin-top: -6% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -3.8% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
-    }
-
-    .header-text {
-        text-align: center;
-        color: #6a6a6a;
-        font-size: 35px;
-        font-family: 'Gotham Black', sans-serif;
-        font-weight: bold;
-        margin-top: -70%;
-    }
-
-    /* ESSE É O FUNDO GERAL */
-    .marcas-fundo {
-        height: 1800px;
-        object-fit: cover;
-    }
-
-    .container-grid {
-        margin-top: 10%;
-        grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
-    }
-
-    .grey-container {
-        height: 125px;
-        width: 125px;
-    }
-
-
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
-    }
-
-    .produtos-participantes-image {
-        margin-top: 12%;
-        left: 50%;
-        width: auto;
-        height: 68px;
-
-    }
-}
-
-
-@media screen and (min-width: 1581px) and (max-width: 1699px) {
-
-    .como-participar-desktop {
-        margin-top: -6% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -3.8% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
-    }
-
-    .header-text {
-        text-align: center;
-        color: #6a6a6a;
-        font-size: 35px;
-        font-family: 'Gotham Black', sans-serif;
-        font-weight: bold;
-        margin-top: -65%;
-    }
-
-    /* ESSE É O FUNDO GERAL */
-    .marcas-fundo {
-        height: 1800px;
-        object-fit: cover;
-    }
-
-    .container-grid {
-        margin-top: 10%;
-        grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
-    }
-
-    .grey-container {
-        height: 125px;
-        width: 125px;
-    }
-
-
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
-    }
-
-    .produtos-participantes-image {
-        margin-top: 10%;
-        left: 50%;
-        width: auto;
-        height: 71px;
-
-    }
-}
-
-
-@media screen and (min-width: 1699px) and (max-width: 1801px) {
-
-    .como-participar-desktop {
-        margin-top: -0.5% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: 2% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
-    }
-
-    .header-text {
-        text-align: center;
-        color: #6a6a6a;
-        font-size: 45px;
-        font-family: 'Gotham Black', sans-serif;
-        font-weight: bold;
-        margin-top: -56%;
-    }
-
-    /* ESSE É O FUNDO GERAL */
-    .marcas-fundo {
-        height: 1800px;
-        object-fit: cover;
-    }
-
-    .container-grid {
-        margin-top: 8%;
-        grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
-    }
-
-    .grey-container {
-        height: 125px;
-        width: 125px;
-    }
-
-
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
-    }
-
-    .produtos-participantes-image {
-        margin-top: 4%;
-        left: 50%;
-        width: auto;
-        height: 83px;
-
-    }
-}
-
 
 @media screen and (min-width: 1801px) and (max-width: 1850px) {
 
-    .como-participar-desktop {
-        margin-top: -0.5% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: 2% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 33px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -56%;
+        margin-top: 5%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1800px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 10%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 4%;
-        left: 50%;
-        width: auto;
-        height: 88px;
-
+        width: 27% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 1851px) and (max-width: 1900px) {
 
-    .como-participar-desktop {
-        margin-top: -0.5% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -2% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 33px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -56%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1800px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 10%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 4%;
-        left: 50%;
-        width: auto;
-        height: 98px;
-
+        width: 27% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 1901px) and (max-width: 1999px) {
 
-    .como-participar-desktop {
-        margin-top: -0.5% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -2% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -55%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 4%;
-        left: 50%;
-        width: auto;
-        height: 101px;
-
+        width: 27% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 1999px) and (max-width: 2106px) {
 
-    .como-participar-desktop {
-        margin-top: 1% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -2% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -55%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 4%;
-        left: 50%;
-        width: auto;
-        height: 94px;
-
+        width: 19% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 2106px) and (max-width: 2170px) {
 
-    .como-participar-desktop {
-        margin-top: 1% !important;
-    }
 
-
-    .participe-text-overlay {
-        margin-top: 3% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -55%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 9%;
-        left: 50%;
-        width: auto;
-        height: 99px;
-
+        width: 19% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 2171px) and (max-width: 2199px) {
 
-    .como-participar-desktop {
-        margin-top: 1% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: 3% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -52%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 270%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 9%;
-        left: 50%;
-        width: auto;
-        height: 99px;
-
+        width: 19% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 2199px) and (max-width: 2201px) {
 
-    .como-participar-desktop {
-        margin-top: 7% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: 3% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -52%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 250%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 9%;
-        left: 50%;
-        width: auto;
-        height: 99px;
-
+        width: 19% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 2201px) and (max-width: 2303px) {
 
-    .como-participar-desktop {
-        margin-top: 5% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: 3% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -52%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
-        margin-top: 8%;
+        margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 250%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 9%;
-        left: 50%;
-        width: auto;
-        height: 103px;
-
+        width: 19% !important;
+        margin-top: 10% !important;
     }
 }
-
 
 @media screen and (min-width: 2303px) and (max-width: 2405px) {
 
-    .como-participar-desktop {
-        margin-top: 5% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: 3% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+    
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -45%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
         margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 250%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 3%;
-        left: 50%;
-        width: auto;
-        height: 108px;
-
+        width: 19% !important;
+        margin-top: 7% !important;
     }
 }
-
 
 @media screen and (min-width: 2405px) and (max-width: 2499px) {
 
-    .como-participar-desktop {
-        margin-top: 3% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: 3% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+    
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -45%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
         margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 250%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 3%;
-        left: 50%;
-        width: auto;
-        height: 108px;
-
+        width: 19% !important;
+        margin-top: 7% !important;
     }
 }
-
 
 @media screen and (min-width: 2499px) {
 
-    .como-participar-desktop {
-        margin-top: -6% !important;
-    }
-
-
-    .participe-text-overlay {
-        margin-top: -4% !important;
-    }
-
-    /* ESSE É O FUNDO DO GRID */
-    .white-container {
-        height: 900px;
+    
+.white-container {
+        bottom: 0;
+        top: 1%;
+        height: 1400px;
+        z-index: 0;
     }
 
     .header-text {
+        left: 15%;
         text-align: center;
         color: #6a6a6a;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'Gotham Black', sans-serif;
         font-weight: bold;
-        margin-top: -45%;
+        margin-top: 7%;
     }
 
-    /* ESSE É O FUNDO GERAL */
     .marcas-fundo {
-        height: 1900px;
+        height: 1850px;
         object-fit: cover;
     }
 
     .container-grid {
         margin-top: 7%;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 12%;
+        justify-items: center;
+        row-gap: 30px !important;
+        
     }
 
     .grey-container {
-        height: 125px;
-        width: 125px;
+        width: 65px;
+        height: auto;
+    }
+
+    .final-grid-item.trevo {
+        grid-column: 1 / span 1;
+        grid-row: auto;
+    }
+
+    .final-grid-item.vigor {
+        grid-column: 2 / span 1;
+           grid-row: auto;
+    }
+
+    .final-grid-item.vr {
+        grid-column: 3 / span 1;
+        grid-row: auto;
     }
 
 
-    .last-row .grey-container {
-        grid-column: span 3;
-        grid-row: 11;
-        margin-left: 250%;
+    .final-grid-item.wickbold {
+        grid-column: 4 / span 1;
+        grid-row: auto;
     }
+
+
+    .final-grid-item.yoki {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
+
+
+    .final-grid-item.ype {
+        grid-column: 3 / span 1;
+        grid-row: auto;
+    }
+
 
     .produtos-participantes-image {
-        margin-top: 3%;
-        left: 50%;
-        width: auto;
-        height: 108px;
-
+        width: 19% !important;
+        margin-top: 7% !important;
     }
-
 }
+
+
+
 
 
 
