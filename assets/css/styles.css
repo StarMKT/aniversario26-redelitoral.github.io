@@ -15245,6 +15245,9 @@ ul li:nth-child(4) a:before {
 @media screen and (min-width: 1px) and (max-width: 349px) {
 
 
+
+
+
     .raspe-label {
         top: 2% !important;
         left: 25% !important;
@@ -15406,8 +15409,9 @@ ul li:nth-child(4) a:before {
         top: 42% !important;
         width: 170px !important;
         left: 75% !important;
-        transform: rotate(-12deg) !important;
         right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
     }
 
     @keyframes flutuar {
@@ -15422,112 +15426,1766 @@ ul li:nth-child(4) a:before {
         }
     }
 
-    /* AJUSTAR TUDO ISSO NO MOBILE E CONTINUAR A REDIAGRAMAR */
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
 
 }
 
 
 @media screen and (min-width: 349px) and (max-width: 390px) {
 
-
     .raspe-label {
-        top: 3% !important;
+        top: 2% !important;
         left: 25% !important;
     }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1150px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1150px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 15% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 35% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -40% !important;
+        left: 10% !important;
+        width: 200px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 95% !important;
+        left: -8% !important;
+        width: 95px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
+    .carro-premio {
+        position: absolute !important;
+        bottom: 20% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
+    }
+
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 60% !important;
+        width: 130px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
+
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 75% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
 
 
 }
 
 @media screen and (min-width: 390px) and (max-width: 420px) {
 
+ .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
 
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+ 
     .raspe-label {
-        top: 3% !important;
+        top: 2% !important;
         left: 25% !important;
     }
 
-
-
-
-
-    .carro-premio {
-        width: 380px !important;
-        bottom: 2% !important;
-        right: -200px !important;
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1150px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
     }
 
+    .prizes-section .background-image {
+        height: 1150px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
 
-}
+    .prizes-section img {
+        display: block;
+    }
 
-@media screen and (min-width: 420px) and (max-width: 500px) {
+    .prizes-bg {
+        position: absolute;
 
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
 
     .raspe-label {
-        top: 3% !important;
-        left: 25% !important;
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
     }
-
-
-
-
-
-
-    .carro-premio {
-        width: 410px !important;
-        bottom: 2% !important;
-        right: -200px !important;
-    }
-
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 600px) {
-
-
-    .raspe-label {
-        top: 5% !important;
-        left: 25% !important;
-    }
-
 
     .raspadinha-wrapper {
-        top: 8% !important;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
     }
 
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
 
+    .raspe-img {
+        width: 70% !important;
+        left: 15% !important;
+    }
 
+    .sorteios-text {
+        position: absolute;
+        top: 35% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70% !important;
+        z-index: 4;
+    }
 
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
 
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -40% !important;
+        left: 10% !important;
+        width: 200px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 80% !important;
+        left: -8% !important;
+        width: 115px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
     .carro-premio {
-        width: 450px !important;
-        bottom: 2% !important;
-        right: -200px !important;
+        position: absolute !important;
+        bottom: 20% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
     }
 
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 60% !important;
+        width: 130px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
+
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 75% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 450px) {
+
+     .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+ 
+    .raspe-label {
+        top: 2% !important;
+        left: 25% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1150px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1150px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 15% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 35% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -40% !important;
+        left: 10% !important;
+        width: 200px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 70% !important;
+        left: -8% !important;
+        width: 115px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
+    .carro-premio {
+        position: absolute !important;
+        bottom: 20% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
+    }
+
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 60% !important;
+        width: 130px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
+
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 75% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 500px) {
+
+       .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+ 
+ 
+    .raspe-label {
+        top: 2% !important;
+        left: 25% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1200px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1200px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 32% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -50% !important;
+        left: 10% !important;
+        width: 200px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 65% !important;
+        left: -8% !important;
+        width: 105px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
+    .carro-premio {
+        position: absolute !important;
+        bottom: 20% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
+    }
+
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 60% !important;
+        width: 130px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
+
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 75% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+
+         .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+ 
+ 
+
+    .raspe-label {
+        top: 2% !important;
+        left: 25% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1300px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1300px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 32% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -50% !important;
+        left: 10% !important;
+        width: 220px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 65% !important;
+        left: -8% !important;
+        width: 120px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
+    .carro-premio {
+        position: absolute !important;
+        bottom: 5% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
+    }
+
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 62% !important;
+        width: 140px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
+
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 80% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 560px) {
+
+           .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+ 
+ 
+
+    .raspe-label {
+        top: 2% !important;
+        left: 25% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1330px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1330px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 32% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -50% !important;
+        left: 10% !important;
+        width: 220px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 65% !important;
+        left: -8% !important;
+        width: 120px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
+    .carro-premio {
+        position: absolute !important;
+        bottom: 5% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
+    }
+
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 62% !important;
+        width: 140px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
+
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 80% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+}
+
+@media screen and (min-width: 560px) and (max-width: 600px) {
+
+           .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+ 
+ 
+
+    .raspe-label {
+        top: 2% !important;
+        left: 25% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1400px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1400px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 32% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -50% !important;
+        left: 10% !important;
+        width: 220px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 65% !important;
+        left: -25% !important;
+        width: 120px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
+    .carro-premio {
+        position: absolute !important;
+        bottom: 5% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
+    }
+
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 62% !important;
+        width: 140px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
+
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 80% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
 
 }
 
 @media screen and (min-width: 600px) and (max-width: 700px) {
+         .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
 
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+ 
+ 
 
     .raspe-label {
-        top: 5% !important;
+        top: 2% !important;
         left: 25% !important;
     }
 
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1400px !important;
+        /* altura suficiente para conter tudo no mobile */
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1400px !important;
+        /* OU 600px conforme desejado */
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 8% !important;
+        left: 45% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
 
     .raspadinha-wrapper {
-        top: 8% !important;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 32% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        /* altura visível para permitir que os filhos posicionem-se dentro */
+        z-index: 5;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: -50% !important;
+        left: 10% !important;
+        width: 220px !important;
+        height: auto;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 65% !important;
+        left: -25% !important;
+        width: 120px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+        /* 👈 altura definida para permitir 'top' absoluto */
+    }
+
+    /* Texto sobreposto ao carro */
+    .carro-text-img {
+        position: absolute !important;
+        top: 70% !important;
+        /* agora vai funcionar corretamente */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    /* Imagem do carro */
+    .carro-premio {
+        position: absolute !important;
+        bottom: 5% !important;
+        /* encosta na base do .car-inner */
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 105% !important;
+        height: auto;
+        display: block;
     }
 
 
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
 
+    .balao-deco.esquerda {
+        top: 62% !important;
+        width: 140px !important;
+        left: -10%;
+        z-index: 30 !important;
+    }
 
+    .balao-deco.direita {
+        top: 42% !important;
+        width: 170px !important;
+        left: 80% !important;
+        right: -10%;
+        z-index: 30 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
 
-    .carro-premio {
-        width: 450px !important;
-        bottom: 2% !important;
-        right: -200px !important;
+    @keyframes flutuar {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
     }
 
 
