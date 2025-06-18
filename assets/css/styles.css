@@ -18788,9 +18788,9 @@ ul li:nth-child(4) a:before {
 
 }
 
-
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
-     .ticket-big1,
+@media screen and (min-width: 1000px) and (max-width: 1040px) {
+    
+    .ticket-big1,
     .ticket-big2,
     .ticket-big3,
     .ticket-big4 {
@@ -18815,25 +18815,20 @@ ul li:nth-child(4) a:before {
     .ticket16 {
         transform: scale(0.8);
     }
- 
- 
 
-    .raspe-label {
-        top: 2% !important;
-        left: 25% !important;
+    .raspe-text {
+        left: 40% !important;
     }
 
     .prizes-section {
         position: relative;
         width: 100%;
-        height: 2100px !important;
-        /* altura suficiente para conter tudo no mobile */
+        height: 1100px !important;
         overflow: hidden;
     }
 
     .prizes-section .background-image {
-        height: 2100px !important;
-        /* OU 600px conforme desejado */
+        height: 1100px !important;
         object-fit: cover;
     }
 
@@ -18843,7 +18838,6 @@ ul li:nth-child(4) a:before {
 
     .prizes-bg {
         position: absolute;
-
         top: 0;
         left: 0;
         width: 100%;
@@ -18852,16 +18846,17 @@ ul li:nth-child(4) a:before {
 
     .raspe-label {
         position: absolute;
-        top: 8% !important;
-        left: 45% !important;
+        top: 15% !important;
+        left: 23% !important;
         transform: translateX(-50%);
         z-index: 2;
     }
 
     .raspadinha-wrapper {
         position: absolute;
-        top: 14%;
+        top: 3% !important;
         left: 50%;
+        width: 40% !important;
         transform: translateX(-50%);
         z-index: 3;
     }
@@ -18880,10 +18875,10 @@ ul li:nth-child(4) a:before {
 
     .sorteios-text {
         position: absolute;
-        top: 32% !important;
+        top: 28.5% !important;
         left: 50%;
         transform: translateX(-50%);
-        width: 50% !important;
+        width: 40% !important;
         z-index: 4;
     }
 
@@ -18896,23 +18891,24 @@ ul li:nth-child(4) a:before {
         position: relative !important;
         width: 100%;
         height: 200px;
-        /* altura visível para permitir que os filhos posicionem-se dentro */
-        z-index: 5;
+        z-index: 90 !important;
     }
 
     .celular-premio {
         position: absolute !important;
-        top: -90% !important;
-        left: 10% !important;
-        width: 360px !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
         height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
     }
 
     .premios38-img {
         position: absolute !important;
-        top: 60% !important;
-        left: -35% !important;
-        width: 145px !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 150px !important;
         height: auto;
     }
 
@@ -18929,43 +18925,38 @@ ul li:nth-child(4) a:before {
         position: relative !important;
         width: 100% !important;
         height: 250px !important;
-        /* 👈 altura definida para permitir 'top' absoluto */
     }
 
-    /* Texto sobreposto ao carro */
     .carro-text-img {
         position: absolute !important;
-        top: 105% !important;
-        /* agora vai funcionar corretamente */
-        left: 50%;
+        top: 30% !important;
+        left: 25%;
         transform: translateX(-50%);
-        width: 78% !important;
+        width: 45% !important;
         height: auto;
         z-index: 6;
         pointer-events: none;
     }
 
-    /* Imagem do carro */
-.carro-premio {
-    position: absolute !important;
-    bottom: -25% !important;
-    left: 52% !important;
-    transform: translateX(-50%) !important;
-    width: 90% !important;
-    height: auto !important;
-    display: block !important;
-    opacity: 1 !important;
-    transition: none !important;
-    animation: none !important;
-    pointer-events: auto !important;
-    cursor: pointer; /* feedback visual */
-}
+    .carro-premio {
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 35% !important;
+        transform: translateX(-50%);
+        width: 70% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
+    }
 
-/* Remove qualquer efeito de hover */
-.carro-premio:hover {
-    transform: translateX(-50%) !important;
-    transition: none !important;
-}
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
 
     .balao-deco {
         position: absolute;
@@ -18978,81 +18969,1639 @@ ul li:nth-child(4) a:before {
     }
 
     .balao-deco.esquerda {
-        top: 60% !important;
-        width: 230px !important;
-        left: -5%;
-        z-index: 30 !important;
+        top: 15% !important;
+        width: 270px !important;
+        left: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
     }
 
     .balao-deco.direita {
-        top: 42% !important;
-        width: 260px !important;
-        left: 82% !important;
+        top: 15% !important;
+        width: 270px !important;
+        left: 85% !important;
         right: -10%;
-        z-index: 30 !important;
+        z-index: 99 !important;
         animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
     }
 
     @keyframes flutuar {
-
-        0%,
-        100% {
+        0%, 100% {
             transform: translateY(0);
         }
-
         50% {
             transform: translateY(-10px);
         }
     }
 
     @keyframes flutuar-com-rotacao {
-
-        0%,
-        100% {
+        0%, 100% {
             transform: translateY(0) rotate(-12deg);
         }
-
         50% {
             transform: translateY(-10px) rotate(-12deg);
         }
     }
 
-
-
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
 }
 
 
-/* CHECKPOINT */
+@media screen and (min-width: 1040px) and (max-width: 1100px) {
+    
+    .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
 
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
 
+    .raspe-text {
+        left: 40% !important;
+    }
 
-@media screen and (min-width: 1400px) and (max-width: 1500px) {
-
-    .background-image {
+    .prizes-section {
+        position: relative;
+        width: 100%;
         height: 1100px !important;
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1100px !important;
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
     }
 
     .raspe-label {
-        top: 20% !important;
-        left: 20% !important;
+        position: absolute;
+        top: 12% !important;
+        left: 23% !important;
+        transform: translateX(-50%);
+        z-index: 2;
     }
-
 
     .raspadinha-wrapper {
-        top: 2% !important;
+        position: absolute;
+        top: -1% !important;
+        left: 50%;
+        width: 40% !important;
+        transform: translateX(-50%);
+        z-index: 3;
     }
 
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
 
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
 
+    .sorteios-text {
+        position: absolute;
+        top: 26.5% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 36% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        z-index: 90 !important;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
+        height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 150px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .carro-text-img {
+        position: absolute !important;
+        top: 30% !important;
+        left: 25%;
+        transform: translateX(-50%);
+        width: 45% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
 
     .carro-premio {
-        width: 510px !important;
-        bottom: 2% !important;
-        right: -200px !important;
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 35% !important;
+        transform: translateX(-50%);
+        width: 70% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
     }
 
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
 
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 15% !important;
+        width: 270px !important;
+        left: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.direita {
+        top: 15% !important;
+        width: 270px !important;
+        left: 85% !important;
+        right: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+        0%, 100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
 }
+
+
+@media screen and (min-width: 1100px) and (max-width: 1150px) {
+    
+    .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+
+    .raspe-text {
+        left: 40% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1100px !important;
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1100px !important;
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 12% !important;
+        left: 23% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 2% !important;
+        left: 50%;
+        width: 30% !important;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 25.5% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        z-index: 90 !important;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
+        height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 150px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .carro-text-img {
+        position: absolute !important;
+        top: 30% !important;
+        left: 25%;
+        transform: translateX(-50%);
+        width: 45% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    .carro-premio {
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 35% !important;
+        transform: translateX(-50%);
+        width: 70% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
+    }
+
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 15% !important;
+        width: 270px !important;
+        left: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.direita {
+        top: 15% !important;
+        width: 270px !important;
+        left: 85% !important;
+        right: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+        0%, 100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
+}
+
+
+@media screen and (min-width: 1150px) and (max-width: 1170px) {
+    
+    .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+
+    .raspe-text {
+        left: 40% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1100px !important;
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1100px !important;
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 12% !important;
+        left: 23% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 2% !important;
+        left: 50%;
+        width: 30% !important;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 25.5% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        z-index: 90 !important;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
+        height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 150px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .carro-text-img {
+        position: absolute !important;
+        top: 30% !important;
+        left: 25%;
+        transform: translateX(-50%);
+        width: 45% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    .carro-premio {
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 35% !important;
+        transform: translateX(-50%);
+        width: 70% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
+    }
+
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 15% !important;
+        width: 270px !important;
+        left: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.direita {
+        top: 15% !important;
+        width: 270px !important;
+        left: 85% !important;
+        right: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+        0%, 100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
+}
+
+
+@media screen and (min-width: 1170px) and (max-width: 1200px) {
+    
+    .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+
+    .raspe-text {
+        left: 40% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1100px !important;
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1100px !important;
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 12% !important;
+        left: 23% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 2% !important;
+        left: 50%;
+        width: 30% !important;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 27.5% !important;
+        left: 50.3%;
+        transform: translateX(-50%);
+        width: 30% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        z-index: 90 !important;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
+        height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 150px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .carro-text-img {
+        position: absolute !important;
+        top: 30% !important;
+        left: 28%;
+        transform: translateX(-50%);
+        width: 38% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    .carro-premio {
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 38% !important;
+        transform: translateX(-50%);
+        width: 60% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
+    }
+
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 15% !important;
+        width: 290px !important;
+        left: -8%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.direita {
+        top: 15% !important;
+        width: 290px !important;
+        left: 84.5% !important;
+        right: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+        0%, 100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1250px) {
+    
+    .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+
+    .raspe-text {
+        left: 35% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1100px !important;
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1100px !important;
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 12% !important;
+        left: 28% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 2% !important;
+        left: 50%;
+        width: 30% !important;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 27.5% !important;
+        left: 51.3%;
+        transform: translateX(-50%);
+        width: 30% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        z-index: 90 !important;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
+        height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 150px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .carro-text-img {
+        position: absolute !important;
+        top: 30% !important;
+        left: 28%;
+        transform: translateX(-50%);
+        width: 38% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    .carro-premio {
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 38% !important;
+        transform: translateX(-50%);
+        width: 60% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
+    }
+
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 15% !important;
+        width: 290px !important;
+        left: -8%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.direita {
+        top: 15% !important;
+        width: 290px !important;
+        left: 84.5% !important;
+        right: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+        0%, 100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
+}
+
+
+@media screen and (min-width: 1250px) and (max-width: 1300px) {
+    
+    .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+
+    .raspe-text {
+        left: 35% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1100px !important;
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1100px !important;
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 12% !important;
+        left: 28% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 2% !important;
+        left: 50%;
+        width: 30% !important;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 27.5% !important;
+        left: 51.3%;
+        transform: translateX(-50%);
+        width: 26% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        z-index: 90 !important;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
+        height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 135px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .carro-text-img {
+        position: absolute !important;
+        top: 30% !important;
+        left: 28%;
+        transform: translateX(-50%);
+        width: 34% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    .carro-premio {
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 40% !important;
+        transform: translateX(-50%);
+        width: 55% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
+    }
+
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 15% !important;
+        width: 290px !important;
+        left: -8%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.direita {
+        top: 15% !important;
+        width: 290px !important;
+        left: 84.5% !important;
+        right: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+        0%, 100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
+}
+
+
+@media screen and (min-width: 1300px) and (max-width: 1450px) {
+    
+    .ticket-big1,
+    .ticket-big2,
+    .ticket-big3,
+    .ticket-big4 {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .ticket1,
+    .ticket2,
+    .ticket3,
+    .ticket4,
+    .ticket5,
+    .ticket6,
+    .ticket7,
+    .ticket8,
+    .ticket9,
+    .ticket10,
+    .ticket11,
+    .ticket13,
+    .ticket14,
+    .ticket15,
+    .ticket16 {
+        transform: scale(0.8);
+    }
+
+    .raspe-text {
+        left: 35% !important;
+    }
+
+    .prizes-section {
+        position: relative;
+        width: 100%;
+        height: 1100px !important;
+        overflow: hidden;
+    }
+
+    .prizes-section .background-image {
+        height: 1100px !important;
+        object-fit: cover;
+    }
+
+    .prizes-section img {
+        display: block;
+    }
+
+    .prizes-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .raspe-label {
+        position: absolute;
+        top: 12% !important;
+        left: 28% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .raspadinha-wrapper {
+        position: absolute;
+        top: 2% !important;
+        left: 50%;
+        width: 30% !important;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    .raspe-img,
+    .raspadinha-canvas {
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    .raspe-img {
+        width: 70% !important;
+        left: 18% !important;
+    }
+
+    .sorteios-text {
+        position: absolute;
+        top: 27.5% !important;
+        left: 51.3%;
+        transform: translateX(-50%);
+        width: 26% !important;
+        z-index: 4;
+    }
+
+    .sorteios-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .premios-container {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+        z-index: 90 !important;
+    }
+
+    .celular-premio {
+        position: absolute !important;
+        top: 15% !important;
+        left: 125% !important;
+        width: 300px !important;
+        height: auto;
+        pointer-events: auto !important;
+         z-index: 90 !important;
+    }
+
+    .premios38-img {
+        position: absolute !important;
+        top: 30.5% !important;
+        left: 30% !important;
+        width: 135px !important;
+        height: auto;
+    }
+
+    .car-wrapper {
+        position: absolute !important;
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 5;
+    }
+
+    .car-inner {
+        position: relative !important;
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .carro-text-img {
+        position: absolute !important;
+        top: 30% !important;
+        left: 28%;
+        transform: translateX(-50%);
+        width: 34% !important;
+        height: auto;
+        z-index: 6;
+        pointer-events: none;
+    }
+
+    .carro-premio {
+        position: absolute !important;
+        bottom: 30% !important;
+        left: 40% !important;
+        transform: translateX(-50%);
+        width: 55% !important;
+        height: auto;
+        display: block;
+        transition: none !important;
+        animation: none !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+        z-index: 6 !important;
+    }
+
+    .carro-premio:hover {
+        transform: translateX(-50%) !important;
+        transition: none !important;
+    }
+
+    .balao-deco {
+        position: absolute;
+        top: 30%;
+        width: 80px;
+        height: auto;
+        z-index: 2;
+        opacity: 0.8;
+        animation: flutuar 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.esquerda {
+        top: 15% !important;
+        width: 290px !important;
+        left: -8%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao-esquerda 2.5s ease-in-out infinite;
+    }
+
+    .balao-deco.direita {
+        top: 15% !important;
+        width: 290px !important;
+        left: 84.5% !important;
+        right: -10%;
+        z-index: 99 !important;
+        animation: flutuar-com-rotacao 2.5s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao {
+        0%, 100% {
+            transform: translateY(0) rotate(-12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(-12deg);
+        }
+    }
+
+    @keyframes flutuar-com-rotacao-esquerda {
+        0%, 100% {
+            transform: translateY(0) rotate(12deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(12deg);
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1500px) and (max-width: 1599px) {
 
