@@ -14388,6 +14388,25 @@ ul li:nth-child(4) a:before {
 
 
 
+.ticket-dynamic {
+  position: absolute;
+  top: -100px;
+  width: var(--size);
+  height: auto;
+  animation: ticket-fall var(--duration) linear forwards;
+  transform: rotate(0deg);
+  will-change: transform, top;
+}
+
+@keyframes ticket-fall {
+  to {
+    top: 100vh;
+    transform: rotate(var(--rotation));
+  }
+}
+
+
+
 
 
 
