@@ -15285,6 +15285,7 @@ ul li:nth-child(4) a:before {
         z-index: 2;
     }
 
+  
     .raspadinha-wrapper {
         position: absolute;
         top: 14%;
@@ -15299,6 +15300,15 @@ ul li:nth-child(4) a:before {
         height: auto;
         display: block;
     }
+
+    .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .raspe-img {
         width: 70% !important;
@@ -15498,6 +15508,14 @@ ul li:nth-child(4) a:before {
     .raspe-img {
         width: 70% !important;
         left: 15% !important;
+    }
+
+      .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
     }
 
     .sorteios-text {
@@ -15722,6 +15740,15 @@ ul li:nth-child(4) a:before {
         left: 15% !important;
     }
 
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
+
     .sorteios-text {
         position: absolute;
         top: 35% !important;
@@ -15941,6 +15968,16 @@ ul li:nth-child(4) a:before {
         width: 70% !important;
         left: 15% !important;
     }
+
+
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .sorteios-text {
         position: absolute;
@@ -16165,6 +16202,16 @@ ul li:nth-child(4) a:before {
         left: 18% !important;
     }
 
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
+
     .sorteios-text {
         position: absolute;
         top: 28% !important;
@@ -16387,6 +16434,16 @@ ul li:nth-child(4) a:before {
         left: 15% !important;
     }
 
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
+
     .sorteios-text {
         position: absolute;
         top: 24% !important;
@@ -16606,6 +16663,16 @@ ul li:nth-child(4) a:before {
         width: 70% !important;
         left: 15% !important;
     }
+
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .sorteios-text {
         position: absolute;
@@ -16828,6 +16895,16 @@ ul li:nth-child(4) a:before {
         left: 15% !important;
     }
 
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
+
     .sorteios-text {
         position: absolute;
         top: 24% !important;
@@ -17047,6 +17124,16 @@ ul li:nth-child(4) a:before {
         width: 70% !important;
         left: 15% !important;
     }
+
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .sorteios-text {
         position: absolute;
@@ -17270,6 +17357,16 @@ ul li:nth-child(4) a:before {
         left: 15% !important;
     }
 
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
+
     .sorteios-text {
         position: absolute;
         top: 22% !important;
@@ -17491,6 +17588,16 @@ ul li:nth-child(4) a:before {
         width: 70% !important;
         left: 15% !important;
     }
+
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .sorteios-text {
         position: absolute;
@@ -17715,6 +17822,16 @@ ul li:nth-child(4) a:before {
         width: 70% !important;
         left: 15% !important;
     }
+
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .sorteios-text {
         position: absolute;
@@ -17946,6 +18063,16 @@ ul li:nth-child(4) a:before {
         width: 70% !important;
         left: 15% !important;
     }
+
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .sorteios-text {
         position: absolute;
@@ -18180,6 +18307,16 @@ ul li:nth-child(4) a:before {
         left: 15% !important;
     }
 
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
+
     .sorteios-text {
         position: absolute;
         top: 24.5% !important;
@@ -18413,6 +18550,16 @@ ul li:nth-child(4) a:before {
         left: 15% !important;
     }
 
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
+
     .sorteios-text {
         position: absolute;
         top: 26.5% !important;
@@ -18644,6 +18791,16 @@ ul li:nth-child(4) a:before {
         width: 70% !important;
         left: 15% !important;
     }
+
+    
+        .raspadinha-canvas {
+        visibility: hidden !important;
+    }
+
+       .raspe-label {
+        visibility: hidden !important;
+    }
+
 
     .sorteios-text {
         position: absolute;
@@ -23608,7 +23765,7 @@ ul li:nth-child(4) a:before {
         transform: translateX(-50%);
         width: 15% !important;
         z-index: 4;
-    }
+     }
 
     .sorteios-text img {
         width: 100%;
