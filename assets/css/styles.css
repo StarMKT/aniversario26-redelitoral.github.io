@@ -14412,9 +14412,6 @@ ul li:nth-child(4) a:before {
 
 
 
-
-
-
 .faq-item {
     overflow: hidden;
 }
@@ -14477,6 +14474,15 @@ ul li:nth-child(4) a:before {
 /* ==========================================================
    TICKETS — responsividade mobile
    ========================================================== */
+
+@media screen and (max-width: 480px) {
+  .ticket-big1,
+  .ticket-big2,
+  .ticket-big3,
+  .ticket-big4 {
+    box-shadow: none !important;
+  }
+}
 
 
 @media screen and (max-width: 390px) {
