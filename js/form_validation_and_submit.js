@@ -28,7 +28,7 @@ window.onload = function () {
 }
 
 function sendwhatsapp() {
-    var phonenumber = "+5511912552085";
+    var phonenumber = "+5513996359552";
 
     var name = document.querySelector(".name").value;
     var email = document.querySelector(".email").value;
